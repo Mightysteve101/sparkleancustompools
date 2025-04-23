@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sparklean Custom Pools</title>
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="java/script.js"></script>
+</head>
+<body>
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <!--Nav Logo-->
+    <a href="" class="cs-logo cs-desktop" aria-label="back to home">
+        <div class="cs-logo-wrapper">
+            <!--Default Logo-->
+            <img class="cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Logos/construction-logo.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </div>
+    </a>
+    <div class="cs-middle">
+        <!--Top Bar-->
+        <div class="cs-top-bar">
+            <div class="cs-top-social">
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+            <ul class="cs-location">
+                <li class="cs-item cs-remove">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-pin1.svg" alt="icon" width="20" height="20" aria-hidden="true" decoding="async">
+                    555 Fake Avenue - South Milwaukee, WI 53172
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-clock1.svg" alt="icon" width="20" height="20" aria-hidden="true" decoding="async">
+                    M-F: 8:00am - 9:00pm
+                </li>
+            </ul>
+        </div>
+        <div class="cs-bottom-bar">
+            <a href="" class="cs-logo cs-mobile" aria-label="back to home">
+                <div class="cs-logo-wrapper">
+                    <!--Default Logo-->
+                    <img class="cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Logos/construction-logo.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+                    <!--Dark Mode Logo-->
+                    <img class="cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Logos/construction-logo-white2.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+                </div>
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Services
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Asthetics
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a class="cs-nav-button cs-tablet" href="">
+                <picture class="cs-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-phone1.svg" alt="icon" width="24" height="24">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-header">Free Contact 24/7</span>
+                    <span class="cs-link-content">(604) 555-0234</span>
+                </div>
+            </a>
+            <a href="" class="cs-button-border">
+                Get In Touch
+                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/up-right-arrow.svg" alt="icon" width="20" height="20">
+            </a>
+        </div>
+    </div>
+    <div class="cs-contact-wrapper">
+        <a class="cs-desktop-button" href="">
+            <picture class="cs-wrapper">
+                <img class="cs-button-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-phone1.svg" alt="icon" width="24" height="24">
+            </picture>
+            <div class="cs-info">
+                <span class="cs-header">Free Contact 24/7</span>
+                <span class="cs-link-content">(604) 555-0234</span>
+            </div>
+        </a>
+    </div>
+</header>
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-1950">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">We do not cook, we create your emotions!</h1>
+            <div class="cs-flex-group">
+                <p class="cs-text">My passion for food has brought many new, fun and delicious dishes to the table.</p>
+                <a href="" class="cs-button-solid">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/restaurant-space.jpeg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/restaurant-space.jpeg">
+        <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/restaurant-space.jpeg" alt="restaurant" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
+                                                                
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-598">
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room3-m.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room3.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room3.jpg" alt="room" width="960" height="796">
+    </picture>
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Who We Are</span>
+            <h2 class="cs-title">House Painting Contractors For Oak Harbor </h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+            <p class="cs-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <a href="" class="cs-button-solid">Contact Us</a>
+        </div>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                    Services                  -->
+<!-- ============================================ -->
+
+<section id="services-1771">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex-group">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">We Trained You To Gain</h2>
+            </div>
+            <p class="cs-text">
+                Workouts shift your body from periods of aerobic activity to periods of the best training tools for developing a strong anaerobic activity. When your body is in and “aerobic mode,” your body is using oxygen.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-1.png">
+                    <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-1.png">
+                    <img decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-1.png"
+                            alt="finance" width="413" height="374" aria-hidden="true" loading="lazy">
+                </picture>
+                <div class="cs-details">
+                    <span class="cs-tag">Workout</span>
+                    <h3 class="cs-h3">Aerobics</h3>
+                    <p class="cs-item-text">
+                        Rev up your fitness journey with heart-pumping cardio indoor cycling. Experience a dynamic workout that blends intensity, endurance, and fun all within the comfort. 
+                    </p>
+                    <a href="/" class="cs-link">
+                        Join Us Today
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chevron-right-white.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                    </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-4.png">
+                    <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-4.png">
+                    <img decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-4.png"
+                            alt="finance" width="413" height="374" aria-hidden="true" loading="lazy">
+                </picture>
+                <div class="cs-details">
+                    <span class="cs-tag">Cardio</span>
+                    <h3 class="cs-h3">Indoor Cycling</h3>
+                    <p class="cs-item-text">
+                        Rev up your fitness journey with heart-pumping cardio indoor cycling. Experience a dynamic workout that blends intensity, endurance, and fun all within the comfort.
+                    </p>
+                    <a href="/" class="cs-link">
+                        Join Us Today
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chevron-right-white.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                    </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png">
+                    <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png">
+                    <img decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png"
+                            alt="finance" width="413" height="374" aria-hidden="true" loading="lazy">
+                </picture>
+                <div class="cs-details">
+                    <span class="cs-tag">Strength</span>
+                    <h3 class="cs-h3">Weight Lifting</h3>
+                    <p class="cs-item-text">
+                        Rev up your fitness journey with heart-pumping cardio indoor cycling. Experience a dynamic workout that blends intensity, endurance, and fun all within the comfort.
+                    </p>
+                    <a href="/" class="cs-link">
+                        Join Us Today
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chevron-right-white.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                    </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-5.png">
+                    <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-5.png">
+                    <img decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-5.png"
+                            alt="finance" width="413" height="374" aria-hidden="true" loading="lazy">
+                </picture>
+                <div class="cs-details">
+                    <span class="cs-tag">Flexibility</span>
+                    <h3 class="cs-h3">Yoga & Pilates</h3>
+                    <p class="cs-item-text">
+                        Rev up your fitness journey with heart-pumping cardio indoor cycling. Experience a dynamic workout that blends intensity, endurance, and fun all within the comfort.
+                    </p>
+                    <a href="/" class="cs-link">
+                        Join Us Today
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chevron-right-white.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Stats                      -->
+<!-- ============================================ -->
+
+<section id="stats-1738">
+    <div class="cs-container">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-number">38+</span>
+                <p class="cs-item-text">
+                    Rev up your fitness journey with heart-pumping cardio indoor cycling. Experience a dynamic workout.
+                </p>
+                <a href="" class="cs-link">
+                    <span class="cs-link-text">Our Trainer</span>
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white%20right%20arrow.svg" alt="white arrow icon" width="20" height="20" aria-hidden="true">
+                </a>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">44K</span>
+                <p class="cs-item-text">
+                    Rev up your fitness journey with heart-pumping cardio indoor cycling. Experience a dynamic workout.
+                </p>
+                <a href="" class="cs-link">
+                    <span class="cs-link-text">Fitness Classes</span>
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white%20right%20arrow.svg" alt="white arrow icon" width="20" height="20" aria-hidden="true">
+                </a>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">98%</span>
+                <p class="cs-item-text">
+                    Rev up your fitness journey with heart-pumping cardio indoor cycling. Experience a dynamic workout.
+                </p>
+                <a href="" class="cs-link red">
+                    <span class="cs-link-text">Testimonials</span>
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white%20right%20arrow.svg" alt="white arrow icon" width="20" height="20" aria-hidden="true">
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-434">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Portfolio</span>
+            <h2 class="cs-title">Our Gallery</h2>
+            </div>
+        <div class="cs-grid">
+            <!--In order from top left to top right, then bottom left to bototm right-->
+            <!--Picture 1-->
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="424" height="190">
+            </picture>
+            <!--Picture 2-->
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="571" height="390">
+            </picture>
+            <!--Picture 3-->
+            <picture class="cs-picture cs-picture3">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="268" height="190">
+            </picture>
+            <!--Picture 4-->
+            <picture class="cs-picture cs-picture4">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="268" height="190">
+            </picture>
+            <!--Picture 5-->
+            <picture class="cs-picture cs-picture5">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="268" height="390">
+            </picture>
+            <!--Picture 6-->
+            <picture class="cs-picture cs-picture6">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="425" height="390">
+            </picture>
+            <!--Picture 7-->
+            <picture class="cs-picture cs-picture7">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="273" height="190">
+            </picture>
+            <!--Picture 8-->
+            <picture class="cs-picture cs-picture8">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="273" height="190">
+            </picture>
+            <!--Picture 9-->
+            <picture class="cs-picture cs-picture9">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="268" height="390">
+            </picture>
+            <!--Picture 10-->
+            <picture class="cs-picture cs-picture10">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="268" height="390">
+            </picture>
+            <!--Picture 11-->
+            <picture class="cs-picture cs-picture11">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery image" width="268" height="190">
+            </picture>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<section id="reviews-982">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">Trusted by Thousand of People & Companies</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <picture class="cs-picture" aria-hidden="true">
+                        <img class="cs-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg" decoding="async" alt="profile" width="50" height="50">
+                    </picture>
+                    <span class="cs-name">
+                        George Thomas
+                        <span class="cs-job">Founder Of Yokoloko</span>
+                    </span>
+                </div>
+                <p class="cs-review">
+                    Curabitur vitae nunc sed velit dignissim sodales ut. Maecenas ultricies mi eget mauris pharetra et. Et ligula ullamcorper malesuada proin pellentesque diam volutpat commodo. 
+                </p>
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <picture class="cs-picture" aria-hidden="true">
+                        <img class="cs-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg" decoding="async" alt="profile" width="50" height="50">
+                    </picture>
+                    <span class="cs-name">
+                        Mason James
+                        <span class="cs-job">Senior Gardener Farmer</span>
+                    </span>
+                </div>
+                <p class="cs-review">
+                    Curabitur vitae nunc sed velit dignissim sodales ut. Maecenas ultricies mi eget mauris pharetra et. Et ligula ullamcorper malesuada proin pellentesque diam volutpat commodo
+                </p>
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <picture class="cs-picture" aria-hidden="true">
+                        <img class="cs-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg" decoding="async" alt="profile" width="50" height="50">
+                    </picture>
+                    <span class="cs-name">
+                        George Thomas
+                        <span class="cs-job">Founder Of Yokoloko</span>
+                    </span>
+                </div>
+                <p class="cs-review">
+                    Curabitur vitae nunc sed velit dignissim sodales ut. Maecenas ultricies mi eget mauris pharetra et. Et ligula ullamcorper malesuada proin pellentesque diam volutpat commodo
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+ <!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-1333">
+    <div class="cs-container">
+        <!--Form-->
+        <form class="cs-form" id="cs-form-1333" name="Contact Form" method="post">
+            <div class="cs-content">
+                <span class="cs-topper">Contact Us</span>
+                <h2 class="cs-title">Make Appointment</h2>
+            </div>
+            <label class="cs-label">
+                Name
+                <input class="cs-input" required type="text" id="name-1333" name="name" placeholder="Name">
+            </label>
+            <label class="cs-label cs-email">
+                Email
+                <input class="cs-input" required type="email" id="email-1333" name="email" placeholder="Email">
+            </label>
+            <label class="cs-label cs-phone">
+                Phone
+                <input class="cs-input" required type="number" id="phone-1333" name="phone" placeholder="Phone">
+            </label>
+            <label class="cs-label">
+                Message
+                <textarea class="cs-input cs-textarea" required name="Message" id="message-1333" placeholder="Write message..."></textarea>
+            </label>
+            <button class="cs-button-solid cs-submit" type="submit">Schedule Appointment</button>
+        </form>
+        <div class="cs-content">
+            <span class="cs-topper">Asked Questions</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What is the best way to start investing?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What are the tax implications of investing in the stock market?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How can I improve my credit score?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What is the difference between a traditional IRA and a Roth IRA?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How can I reduce my tax liability as a self-employed individual?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-1339">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <h2 class="cs-title">Get Finance Solution That Just Makes Sense</h2>
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-1a.svg" alt="facebook" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit twitter profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-1a.svg" alt="twitter" width="6" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-1a.svg" alt="instagram" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit youtube profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-1a.svg" alt="instagram" width="11" height="11">
+                </a>
+            </div>
+        </div>
+        <!-- Links -->
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Quick Links</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="">Services</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Projects</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">About Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-ul-wrapper">
+            <!-- Contact Info -->
+            <span class="cs-header">Contact</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="tel:555-497-1900">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-white.svg" alt="phone icon" width="24" height="24">
+                        555-497-1900
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="mailto:office@email.com">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/email-white.svg" alt="email icon" width="24" height="24">
+                        info@invetexfinance.com
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <!--Make this link go to the google page-->
+                    <a class="cs-link" href="" target="_blank">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-white.svg" alt="pin icon" width="24" height="24">
+                        Oak Harbor, WA
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-credit">
+            © Copyright 2023 <a href="" class="cs-credit-link" target="_blank">Invetex</a>
+        </span>
+        <div class="cs-bottom-links">
+            <a href="" class="cs-bottom-link">Privacy Policy</a>
+            <a href="" class="cs-bottom-link">Terms Of Use</a>
+        </div>
+    </div>
+</footer>
+
+                                                              
+
+</body>
+</html>
