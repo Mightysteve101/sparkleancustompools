@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-	// add classes for mobile navigation toggling
+// add classes for mobile navigation toggling
     var CSbody = document.querySelector("body");
     const CSnavbarMenu = document.querySelector("#cs-navigation");
     const CShamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
@@ -32,16 +32,7 @@ document.addEventListener("DOMContentLoaded", function(){
         }
         item.addEventListener('click', onClick)
         }
-
-    // after scrolling down 100px, add .scroll class to the #cs-navigation
-    document.addEventListener('scroll', (e) => { 
-        const scroll = document.documentElement.scrollTop;
-        if(scroll >= 100){
-    document.querySelector('#cs-navigation').classList.add('scroll')
-        } else {
-        document.querySelector('#cs-navigation').classList.remove('scroll')
-        }
-    });
+                                
 
     /*******************************
      ********** Hero JS ************
