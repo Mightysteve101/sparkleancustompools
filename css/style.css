@@ -759,6 +759,7 @@ html {
         position: absolute;
         top: 0;
         left: 0;
+        border-radius: 0.5rem;
     }
     #sbs-1025 .cs-icon {
         /* 80px - 120px */
@@ -1010,6 +1011,7 @@ html {
         left: 0;
         z-index: -1;
         transition: transform ease-in-out 0.5s, opacity 0.3s;
+        border-radius: 0.5rem;
     }
     #services-1733 .cs-flex {
         display: flex;
@@ -1115,6 +1117,7 @@ html {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        border-radius: 0.5rem;
         
     }
 }
