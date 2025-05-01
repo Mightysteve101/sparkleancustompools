@@ -235,7 +235,7 @@
   #cs-navigation .cs-li-link.cs-active:before {
     display: block;
   }
-  #cs-navigation .cs-button-solid {
+  #cs-navigation .cs-button-2 {
     display: none;
   }
 }
@@ -347,6 +347,7 @@
   #cs-navigation .cs-button-2:hover {
       background-color: black;
   }
+}
                                 
 
 /*-- -------------------------- -->
