@@ -329,42 +329,25 @@
     left: 0;
     transition: width 0.3s;
   }
-  #cs-navigation .cs-button-solid {
-    font-size: 1rem;
-    font-weight: 700;
-    /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
-    text-align: center;
-    text-decoration: none;
-    min-width: 9.375rem;
-    margin: 0;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    padding: 0 1.5rem;
-    color: #fff;
-    background-color: var(--primary);
-    border-radius: 0.25rem;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
+  #cs-navigation .cs-button-2 {
+      font-size: 1rem;
+      /* 46px - 56px */
+      line-height: clamp(2.875rem, 8vw, 3.5rem);
+      text-decoration: none;
+      font-weight: 700;
+      margin: auto;
+      color: #fff;
+      padding: 0 1.5rem;
+      background-color: #328caf;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      transition: background-color 0.3s;
+      border-radius: 0.5rem;
   }
-  #cs-navigation .cs-button-solid:before {
-    content: "";
-    width: 0%;
-    height: 100%;
-    background: #000;
-    opacity: 1;
-    border-radius: 0.25rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
+  #cs-navigation .cs-button-2:hover {
+      background-color: black;
   }
-  #cs-navigation .cs-button-solid:hover:before {
-    width: 100%;
-  }
-}
                                 
 
 /*-- -------------------------- -->
@@ -454,35 +437,24 @@
         margin: 0 0 2.5rem 0;
         color: #fff;
     }
-    #hero-1059 .cs-button-solid {
+    #hero-1059 .cs-button-2 {
         font-size: 1rem;
         /* 46px - 56px */
-        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        line-height: clamp(2.875rem, 8vw, 3.5rem);
         text-decoration: none;
         font-weight: 700;
-        margin: 0;
+        margin: auto;
         color: #fff;
         padding: 0 1.5rem;
-        background-color: var(--primary);
+        background-color: #328caf;
         display: inline-block;
         position: relative;
         z-index: 1;
+        transition: background-color 0.3s;
+        border-radius: 0.5rem;
     }
-    #hero-1059 .cs-button-solid:before {
-        content: "";
-        position: absolute;
-        display: block;
-        height: 100%;
-        width: 0%;
-        background: #000;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: width 0.3s;
-    }
-    #hero-1059 .cs-button-solid:hover:before {
-        width: 100%;
+    #hero-1059 .cs-button-2:hover {
+        background-color: black;
     }
 }
 /* Tablet - 768px */
@@ -559,7 +531,7 @@
     max-width: 38rem;
   }
   #sbs-1636 .cs-title {
-    color: var(--bodyTextColor);
+    color: var(--bodyText);
   }
   #sbs-1636 .cs-h3 {
     font-size: 1.25rem;
@@ -576,38 +548,24 @@
   #sbs-1636 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #sbs-1636 .cs-button-solid {
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
-    color: #fff;
-    min-width: 9.375rem;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
+  #sbs-1636 .cs-button-2 {
+      font-size: 1rem;
+      /* 46px - 56px */
+      line-height: clamp(2.875rem, 8vw, 3.5rem);
+      text-decoration: none;
+      font-weight: 700;
+      margin: auto;
+      color: #fff;
+      padding: 0 1.5rem;
+      background-color: #328caf;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      transition: background-color 0.3s;
+      border-radius: 0.5rem;
   }
-  #sbs-1636 .cs-button-solid:before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background: #000;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width .3s;
-  }
-  #sbs-1636 .cs-button-solid:hover:before {
-    width: 100%;
+  #sbs-1636 .cs-button-2:hover {
+      background-color: black;
   }
   #sbs-1636 .cs-picture {
     width: 100%;
@@ -625,7 +583,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: .5rem;
   }
 }
 /* Tablet - 768px */
@@ -1158,7 +1115,7 @@
         line-height: 1.5em;
         margin: 0;
         max-width: 27.75rem;
-        color: var(--bodyTextColor);
+        color: var(--bodyTextColorWhite);
         opacity: 0.8;
     }
 }
@@ -1184,6 +1141,7 @@
         transform: translateY(-50%);
     }
 }
+
 
 /*-- -------------------------- -->
 <---          Contact           -->
@@ -1450,6 +1408,9 @@
         width: auto;
     }
 }
+
+                                
+                                
 
 /*-- -------------------------- -->
 <---          Footer            -->
