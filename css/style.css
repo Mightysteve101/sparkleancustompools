@@ -581,6 +581,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 0.5rem;
   }
 }
 /* Tablet - 768px */
