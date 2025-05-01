@@ -335,7 +335,6 @@
       line-height: clamp(2.875rem, 8vw, 3.5rem);
       text-decoration: none;
       font-weight: 700;
-      margin: auto;
       color: #fff;
       padding: 0 1.5rem;
       background-color: #328caf;
@@ -443,7 +442,6 @@
         line-height: clamp(2.875rem, 8vw, 3.5rem);
         text-decoration: none;
         font-weight: 700;
-        margin: auto;
         color: #fff;
         padding: 0 1.5rem;
         background-color: #328caf;
@@ -1058,7 +1056,7 @@
         width: 100%;
         height: 1px;
         margin: 2rem 0 0 0;
-        background: #e8e8e8;
+        background: black;
         opacity: 1;
         position: relative;
         display: block;
@@ -1115,7 +1113,7 @@
         line-height: 1.5em;
         margin: 0;
         max-width: 27.75rem;
-        color: var(--bodyTextColorWhite);
+        color: var(--bodyTextColor);
         opacity: 0.8;
     }
 }
@@ -1236,45 +1234,28 @@
         margin: 0 0 clamp(1rem, 3vw, 1.75rem) 0;
         font-family: inherit;
     }
-    #contact-1333 .cs-button-solid {
+
+
+    #contact-1333 .cs-button-2 {
         font-size: 1rem;
         /* 46px - 56px */
-        line-height: clamp(2.875em, 5.5vw, 3.5em);
+        line-height: clamp(2.875rem, 8vw, 3.5rem);
         text-decoration: none;
         font-weight: 700;
-        text-align: center;
-        margin: 0;
-        color: #1a1a1a;
-        border: none;
-        min-width: 9.375rem;
+        margin: auto;
+        color: #fff;
         padding: 0 1.5rem;
-        background-color: var(--primary);
-        overflow: hidden;
+        background-color: #328caf;
         display: inline-block;
         position: relative;
         z-index: 1;
-        /* prevents padding from adding to the width */
-        box-sizing: border-box;
-        transition: color 0.3s;
+        transition: background-color 0.3s;
+        border-radius: 0.5rem;
     }
-    #contact-1333 .cs-button-solid:before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 0%;
-        background: #000;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: width 0.3s;
+    #contact-1333 .cs-button-2:hover {
+        background-color: black;
     }
-    #contact-1333 .cs-button-solid:hover {
-        color: #fff;
-    }
-    #contact-1333 .cs-button-solid:hover:before {
-        width: 100%;
-    }
+
     #contact-1333 .cs-submit {
         width: 100%;
         min-width: 17.6875rem;
