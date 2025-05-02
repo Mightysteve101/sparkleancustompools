@@ -20,7 +20,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", serif;
+    font-family: "Raleway", serif;
 }
 
 *, *:before, *:after {
@@ -29,7 +29,7 @@ body {
 }
 .cs-topper {
     font-size: var(--topperFontSize);
-    line-height: 1.2em;
+    line-height: 1.5em;
     text-transform: uppercase;
     text-align: inherit;
     letter-spacing: .1em;
@@ -42,7 +42,7 @@ body {
 .cs-title {
     font-size: var(--headerFontSize);
     font-weight: 900;
-    line-height: 1.2em;
+    line-height: 1.5em;
     text-align: inherit;
     max-width: 43.75rem;
     margin: 0 0 1rem 0;
@@ -52,7 +52,7 @@ body {
 
 .cs-text {
     font-size: var(--bodyFontSize);
-    line-height: 1.5em;
+    line-height: 2em;
     text-align: inherit;
     width: 100%;
     max-width: 40.625rem;
@@ -122,27 +122,19 @@ body {
     }
 }
 
-/* poppins-200 - latin */
+/* raleway-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-family: 'Raleway';
   font-style: normal;
-  font-weight: 200;
-  src: url('../fonts/poppins-v23-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-weight: 400;
+  src: url('../fonts/raleway-v34-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* poppins-200italic - latin */
+/* raleway-700 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
-  font-style: italic;
-  font-weight: 200;
-  src: url('../fonts/poppins-v23-latin-200italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* poppins-300 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-family: 'Raleway';
   font-style: normal;
-  font-weight: 300;
-  src: url('../fonts/poppins-v23-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-weight: 700;
+  src: url('../fonts/raleway-v34-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
