@@ -723,62 +723,118 @@
 }
 
 /*-- -------------------------- -->
+<---         CS-Content         -->
+<--- -------------------------- -*/
+
+/* you can place this CSS group in your global stylesheet that is loaded on every page of the site so all you need to do is copy and paste the HTML into any section and it will all work. Or piece it inside the media queries in whatever section you want to add it to. You can also remove the cs-topper, cs-title, and cs-text and if they aren't already in your global stylesheet you can paste them outside these media queries so all cs-topper, cs-title, and cs-text on your site will pull from 1 place. */
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+  #cs-content-1801 {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #cs-content-1801 .cs-title {
+    max-width: 25ch;
+  }
+  #cs-content-1801 .cs-button-solid {
+    font-size: calc(16/16 * 1rem);
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: calc(150/16 * 1rem);
+    padding: 0 calc(24/16 * 1rem);
+    background-color: var(--primary);
+    border-radius: calc(4/16 * 1rem);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #cs-content-1801 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: calc(4/16 * 1rem);
+    transition: width 0.3s;
+  }
+  #cs-content-1801 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #cs-content-1801 {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+                                
+
+/*-- -------------------------- -->
 <---           Logos            -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #logos-857 {
-        padding: var(--sectionPadding);
-        background-color: #f7f7f7;
+    #logos-572 {
+        /* 60px - 130px */
+        padding: clamp(3.75rem, 8vw, 8.125rem) 1rem;
     }
-    #logos-857 .cs-container {
+    #logos-572 .cs-container {
         width: 100%;
-        /* changes to 1280px at desktop */
-        max-width: 50rem;
+        max-width: 80rem;
         margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* 48px - 64px */
-        gap: clamp(3rem, 6vw, 4rem);
-    }
-    #logos-857 .cs-content {
-        /* set text align to left if content needs to be left aligned */
-        text-align: center;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
-        align-items: center;
-    }
-
-    #logos-857 .cs-title {
-        margin: 0;
-    }
-    #logos-857 .cs-logo-group {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 2.5rem;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
     }
-    #logos-857 .cs-logo {
-        width: 40%;
-        max-width: 7.5rem;
+    #logos-572 .cs-logo {
+        width: auto;
+        max-width: 90%;
         height: auto;
         margin: 0;
         display: block;
     }
 }
-/* Desktop - 1300px */
-@media only screen and (min-width: 81.25rem) {
-    #logos-857 .cs-container {
-        max-width: 80rem;
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #logos-572 .cs-container {
+        justify-content: space-between;
+    }
+    #logos-572 .cs-logo {
+        width: 20%;
+        /* the max width becomes whatever the actual width of the image is */
+        max-width: max-content;
+        height: auto;
+        display: block;
     }
 }
 
                                 
+
+
 
                                 
 /*-- -------------------------- -->
