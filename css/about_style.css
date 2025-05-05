@@ -282,38 +282,24 @@
     margin: 0;
     color: #fff;
   }
-  #cta-1693 .cs-button-solid {
+  #cta-1693 .cs-button-2 {
     font-size: 1rem;
-    font-weight: 700;
     /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-align: center;
+    line-height: clamp(2.875rem, 8vw, 3.5rem);
     text-decoration: none;
-    min-width: 9.375rem;
-    margin: 0;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    padding: 0 1.5rem;
+    font-weight: 700;
+    margin: auto;
     color: #fff;
-    background-color: var(--secondary);
+    padding: 0 1.5rem;
+    background-color: black;
     display: inline-block;
     position: relative;
     z-index: 1;
+    transition: background-color 0.3s;
+    border-radius: 0.5rem;
   }
-  #cta-1693 .cs-button-solid:before {
-    content: "";
-    width: 0%;
-    height: 100%;
-    background: #000;
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
-  }
-  #cta-1693 .cs-button-solid:hover:before {
-    width: 100%;
+  #cta-1693 .cs-button-2:hover {
+      background-color: #adc2bb;
   }
   #cta-1693 .cs-wrapper {
     width: 100%;
