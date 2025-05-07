@@ -810,7 +810,6 @@
         /* prevents padding from adding to height and width */
         box-sizing: border-box;
         display: flex;
-        justify-content: center;
         align-items: flex-start;
         flex-direction: column;
         grid-column: span 12;
