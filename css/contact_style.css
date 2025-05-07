@@ -167,39 +167,24 @@
     justify-content: center;
     grid-column: span 12;
   }
-  #contact-2061 .cs-button-solid {
-    font-size: 1rem;
-    font-weight: 700;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-align: center;
-    text-decoration: none;
-    min-width: 9.375rem;
-    margin: 0;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    padding: 0 2rem;
-    background-color: var(--primary);
-    color: #fff;
-    border-radius: 0.5rem;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
+  #contact-2061 .cs-button-2 {
+      font-size: 1rem;
+      /* 46px - 56px */
+      line-height: clamp(2.875rem, 8vw, 3.5rem);
+      text-decoration: none;
+      font-weight: 700;
+      margin: auto;
+      color: #fff;
+      padding: 0 1.5rem;
+      background-color: #328caf;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      transition: background-color 0.3s;
+      border-radius: 0.5rem;
   }
-  #contact-2061 .cs-button-solid:before {
-    content: "";
-    width: 0%;
-    height: 100%;
-    background: #000;
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
-  }
-  #contact-2061 .cs-button-solid:hover:before {
-    width: 100%;
+  #contact-2061 .cs-button-2:hover {
+      background-color: black;
   }
   #contact-2061 .cs-submit {
     border: none;
