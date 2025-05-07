@@ -191,40 +191,24 @@
         margin: 0;
         color: var(--bodyTextColor);
     }
-    #steps-276 .cs-button-solid {
+    #steps-276 .cs-button-2 {
         font-size: 1rem;
         /* 46px - 56px */
-        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        line-height: clamp(2.875rem, 8vw, 3.5rem);
         text-decoration: none;
         font-weight: 700;
-        text-align: center;
-        margin: 0;
+        margin: auto;
         color: #fff;
-        min-width: 9.375rem;
         padding: 0 1.5rem;
-        background-color: var(--primary);
-        border-radius: 0.25rem;
+        background-color: #328caf;
         display: inline-block;
         position: relative;
         z-index: 1;
-        /* prevents padding from adding to the width */
-        box-sizing: border-box;
+        transition: background-color 0.3s;
+        border-radius: 0.5rem;
     }
-    #steps-276 .cs-button-solid:before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 0%;
-        background: #000;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        border-radius: 0.25rem;
-        transition: width 0.3s;
-    }
-    #steps-276 .cs-button-solid:hover:before {
-        width: 100%;
+    #steps-276 .cs-button-2:hover {
+        background-color: black;
     }
 }
 /* Tablet - 768px */
@@ -310,6 +294,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 0.5rem;
   }
   #sbs-1586 .cs-content {
     /* set text align to left if content needs to be left aligned */
@@ -403,40 +388,24 @@
     align-items: flex-start;
     gap: 0.5rem;
   }
-  #sbs-1586 .cs-button-solid {
-    font-size: 1rem;
-    line-height: 3.5em;
-    text-decoration: none;
-    font-weight: 700;
-    overflow: hidden;
-    width: auto;
-    margin: 0;
-    color: #fff;
-    padding: 0 3rem;
-    background-color: var(--primary);
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    transition: color 0.3s;
+  #sbs-1586 .cs-button-2 {
+      font-size: 1rem;
+      /* 46px - 56px */
+      line-height: clamp(2.875rem, 8vw, 3.5rem);
+      text-decoration: none;
+      font-weight: 700;
+      margin: auto;
+      color: #fff;
+      padding: 0 1.5rem;
+      background-color: #328caf;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      transition: background-color 0.3s;
+      border-radius: 0.5rem;
   }
-  #sbs-1586 .cs-button-solid:before {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 0%;
-    background: #1a1a1a;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
-  }
-  #sbs-1586 .cs-button-solid:hover {
-    color: var(--primary);
-  }
-  #sbs-1586 .cs-button-solid:hover:before {
-    width: 100%;
+  #sbs-1586 .cs-button-2:hover {
+      background-color: black;
   }
 }
 /* Tablet - 768px */
