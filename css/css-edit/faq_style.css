@@ -154,6 +154,14 @@
         padding: clamp(1.25rem, 1.3vw, 1.5rem) clamp(1rem, 2vw, 1.5rem);
         opacity: 1;
     }
+    #faq-326 .cs-faq-item.active .cs-item-ul{
+        height: auto;
+        /* 20px - 24px top & bottom */
+        /* 16px - 24px left & right */
+        padding: clamp(1.25rem, 1.3vw, 1.5rem) clamp(1rem, 2vw, 1.5rem);
+        opacity: 1;
+    }
+
     #faq-326 .cs-button {
         font-size: 1rem;
         line-height: 1.2em;
@@ -229,8 +237,24 @@
             opacity 0.3s,
             padding-bottom 0.3s;
     }
+    #faq-326 .cs-item-ul {
+        /* 14px - 16px */
+        list-style-type: none;
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        width: 90%;
+        height: 0;
+        margin: 0;
+        /* 16px - 24px */
+        padding: 0 clamp(1rem, 2vw, 1.5rem);
+        opacity: 0;
+        color: var(--bodyTextColor);
+        /* clips the text so it doesn't show up */
+        overflow: hidden;
+        transition:
+            opacity 0.3s,
+            padding-bottom 0.3s;
+
+    }
+
 }
-
-                                                         
-
-                                
