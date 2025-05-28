@@ -106,23 +106,23 @@
             <input type="hidden" name="access_key" value="5310d244-2eb0-4dcc-9c58-15c648925ce1">
             <label class="cs-label cs-split">
                 First Name *
-                <input class="cs-input" required type="text" id="first-name-2061" name="First Name">
+                <input class="cs-input" required type="text" id="first-name-2061" name="First Name" placeholder="First Name" pattern="[a-zA-Z]+" minlength="2" maxlength="15">
             </label>
             <label class="cs-label cs-split">
                 Last Name *
-                <input class="cs-input" required type="text" id="last-name-2061" name="Last Name">
+                <input class="cs-input" required type="text" id="last-name-2061" name="Last Name" placeholder="Last Name" pattern="[a-zA-Z]+" minlength="2" maxlength="15">
             </label>
             <label class="cs-label cs-split">
                 Email *
-                <input class="cs-input" required type="email" id="email-2061" name="Email">
+                <input class="cs-input" required type="email" id="email-2061" name="Email" placeholder="example@gmail.com" pattern="(\w\.?)+@[\w\.-]+\.\w{2,4}">
             </label>
             <label class="cs-label cs-split">
                 Phone Number *
-                <input class="cs-input" required type="tel" id="phone-2061" name="Phone Number">
+                <input class="cs-input" required type="tel" id="phone-2061" name="Phone Number" placeholder="(123) 456-7890" pattern="^\(\d{3}\)\s\d{3}-\d{4}">
             </label>
             <label class="cs-label cs-message">
                 Message
-                <textarea class="cs-input cs-textarea" id="message" name="Message"></textarea>
+                <textarea class="cs-input cs-textarea" id="message" name="Message" maxlength="200"></textarea>
             </label>
             <!-- Honeypot Spam Protection -->
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">

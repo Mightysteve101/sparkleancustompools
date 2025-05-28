@@ -427,20 +427,24 @@
                 <h2 class="cs-title">Make Appointment</h2>
             </div>
             <label class="cs-label">
-                Name
-                <input class="cs-input" required type="text" id="name-1333" name="name" placeholder="Name">
+                First Name
+                <input class="cs-input" required type="text" id="name-1333" name="First Name" placeholder="First Name" minlength="2" maxlength="15">
+            </label>
+            <label class="cs-label">
+                Last Name
+                <input class="cs-input" required type="text" id="name-1333" name="Last Name" placeholder="Last Name" minlength="2" maxlength="15">
             </label>
             <label class="cs-label cs-email">
                 Email
-                <input class="cs-input" required type="email" id="email-1333" name="email" placeholder="Email">
+                <input class="cs-input" required type="email" id="email-1333" name="email" placeholder="Email" placeholder="example@gmail.com" pattern="(\w\.?)+@[\w\.-]+\.\w{2,4}">
             </label>
             <label class="cs-label cs-phone">
                 Phone
-                <input class="cs-input" required type="number" id="phone-1333" name="phone" placeholder="Phone">
+                <input class="cs-input" required type="number" id="phone-1333" name="phone" placeholder="Phone" placeholder="(123) 456-7890" pattern="^\(\d{3}\)\s\d{3}-\d{4}">
             </label>
             <label class="cs-label">
                 Message
-                <textarea class="cs-input cs-textarea" required name="Message" id="message-1333" placeholder="Write message..."></textarea>
+                <textarea class="cs-input cs-textarea" required name="Message" id="message-1333" placeholder="Write message..." maxlength="200"></textarea>
             </label>
             <!-- Honeypot Spam Protection -->
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
