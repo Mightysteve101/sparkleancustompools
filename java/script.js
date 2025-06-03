@@ -44,5 +44,17 @@ document.addEventListener("DOMContentLoaded", function(){
             item.classList.toggle('active')
         }
         item.addEventListener('click', onClick)
-        }             
+        }
+    /********************************
+     ***Cloudfare Bot Protection*****
+     * *****************************/
+     window.onloadTurnstileCallback = function () {
+        turnstile.render("#myWidget", {
+            sitekey: "0x4AAAAAABf-Bb9A0epeHZi3", 
+            callback: function (token) {
+                console.log(`Challenge Success ${token}`);
+            },
+        });
+    };     
 });
+
