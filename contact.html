@@ -9,7 +9,7 @@
     <link rel="preload" href="fonts/raleway-v34-latin-700.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="stylesheet" type="text/css" href="css/global_mini.css">
 	<link rel="stylesheet" type="text/css" href="css/contact_style_mini.css">
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 	<script src="java/script.js"></script>
 </head>
 <body>
@@ -103,16 +103,6 @@
             <h2 class="cs-title">Contact Us</h2>
         <form class="cs-form" id="cs-form-2061" name="Contact Form" action="https://api.web3forms.com/submit" method="POST" data-netlify=”true”>
             <input type="hidden" name="access_key" value="5310d244-2eb0-4dcc-9c58-15c648925ce1">
-            <script type="text/javascript">
-                window.onloadTurnstileCallback = function () {
-                    turnstile.render("#cf-turnstile", {
-                        sitekey: "0x4AAAAAABf-Bb9A0epeHZi3",
-                        callback: function (token) {
-                            console.log(`Challenge Success ${token}`);
-                        },
-                    });
-                };
-            </script>
             <label class="cs-label cs-split">
                 First Name *
                 <input class="cs-input" required type="text" id="first-name-2061" name="First Name" placeholder="First Name" pattern="[a-zA-Z]+" minlength="2" maxlength="15">

@@ -9,7 +9,7 @@
     <link rel="preload" href="fonts/raleway-v34-latin-700.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="stylesheet" type="text/css" href="css/global_mini.css">
 	<link rel="stylesheet" type="text/css" href="css/style_mini.css">
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<script src="java/script.js"></script>
 </head>
 <body>
@@ -423,16 +423,6 @@
     <div class="cs-container">
         <form class="cs-form" id="cs-form-1333" name="Contact Form" action="https://api.web3forms.com/submit" method="POST" data-netlify=”true”>
             <input type="hidden" name="access_key" value="5310d244-2eb0-4dcc-9c58-15c648925ce1">
-            <script type="text/javascript">
-                window.onloadTurnstileCallback = function () {
-                    turnstile.render("#cf-turnstile", {
-                        sitekey: "0x4AAAAAABf-Bb9A0epeHZi3",
-                        callback: function (token) {
-                            console.log(`Challenge Success ${token}`);
-                        },
-                    });
-                };
-            </script>
             <div class="cs-content">
                 <span class="cs-topper">Contact Us</span>
                 <h2 class="cs-title">Make Appointment</h2>
@@ -459,7 +449,7 @@
             </label>
             <!-- Honeypot Spam Protection -->
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-            <div class="cf-turnstile" data-sitekey="0x4AAAAAABf-Bb9A0epeHZi3"></div>
+            <div class="g-recaptcha" data-sitekey="6Ldme00rAAAAAE3m-3i04B28O3g6sXkhZlPTuxBd"></div>
             <button class="cs-button-2 cs-submit" type="submit">Schedule Appointment</button>
         </form>
         <div class="cs-content">
